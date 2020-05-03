@@ -12,46 +12,50 @@
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
-	<!-- linking Google Font. -->
 	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
 </head>
 <body>
 			<div class = "col-12" id = "RPG">
-			<!-- "Star Wars RPG!" title.-->
-			Star Wars KOTOR RPG!
+			Star Wars KOTOR RPG
 			</div>
 		</div>
 
-		<!-- second row that contains all four pictures at the start of the game. -->
+		<div>
+			<audio id="mainBGM">
+				<source src="./assets/sounds/main.mp3" type="audio/mp3">
+			</audio>
+
+			<audio id="attackS">
+				<source src="./assets/sounds/attack.mp3" type="audio/mp3">
+			</audio>
+	</div>
+
+
 		
 	<div class="container"></div>
 		<div class = "row" id = "picRow" style="margin-left: 10px;">
 
 			
 			<div class = "col-3 firstRow _0 float" id = "rev" value = "Revan">
-				<!--picture 1: Darth Revan.-->
 				<p class = "name namer r0" value = "0">Darth Revan</p>
 				<img src="assets/images/Revan.jpg" id = "imager"><br>
 				<p class = "HP Revanhp Revan r0"></p>
 				</div>
 
 			<div class = "col-3 firstRow _1 float" id = "bast" value = "Bastila">
-				<!--picture 2: Bastila Shan.-->
 				<p class = "name nameb 1" value = "1">Bastila Shan</p>
 				<img src="assets/images/Bastila.jpg" id = "imageb"><br>
 				<p class = "HP Bastilahp Bastila 1"></p>
 				</div>
 			
 			<div class = "col-3 firstRow _2 float" id = "mala" value = "Malak">
-				<!--picture 3: Darth Malak.-->
 				<p class = "name namem 2" value = "2">Darth Malak</p>
 				<img src="assets/images/Malak.jpg" id = "imagem"><br>
 				<p class = "HP Malakhp Malak 2"></p>
 				</div>
 
 			<div class = "col-3 firstRow _3 float" id = "caloN" value = "Calo">
-				<!--picture 4: Calo Nord.-->
 				<p class = "name namec 3" value = "3">Calo Nord</p>
 				<img src="assets/images/Calo.png" id = "imagec"><br>
 				<p class = "HP Calohp Calo 3"></p>
@@ -63,26 +67,22 @@
 
 		</div>
 
-		<!-- third row that contains the "Your Character" text.-->
 		<div class = "row padLeft">
 			<div class = "col-12">
 			Your Character
 			</div>
 		</div>
 
-		<!-- fourth row that contains the character the player chooses.-->
 		<div class = "row padLeft">
 			<div class = "col-12" id = "yourChar"></div>
 		</div>
 
-		<!-- fifth row that contains the "Enemies available to attack" text.-->
 		<div class = "row padLeft">
 			<div class = "col-12">
 			<p>Enemies Available to Attack</p>
 			</div>
 		</div>
 
-		<!-- sixth row that contains the characters the enemies available to attack.-->
 		<div class = "row padLeft empty">
 			<div class = "col-3 move"  id = "enemies0"></div>
 			<div class = "col-3 move"  id = "enemies1"></div>
@@ -90,33 +90,28 @@
 			<div class = "col-3 move"  id = "enemies3"></div>
 		</div>
 
-		<!-- seventh row that contains the "Fight Section"-->
 		<div class = "row padLeft">
 			<div class = "col-12">
 			<p>Fight Section</p>
 			</div>
 		</div>
 
-		<!-- eight row for the "Attack" button.-->
 		<div class = "row padLeft">
 			<div class = "col-12 attackButton">
 			<button style = "font-size: 20px; font-family: 'Lekton', sans-serif;">Attack</button>
 			</div>
 		</div>
 
-		<!-- ninth row that contains the "Defender"-->
 		<div class = "row padLeft">
 			<div class = "col-12">
 			<p>Defender</p>
 			</div>
 		</div>
 		
-		<!-- tenth row that contains the character the player has chosen to attack.-->
 		<div class = "row padLeft" style = "padding:0px">
 			<div class = "col-12" id = "defender"></div>
 		</div>
 
-		<!-- eleventh row that contains the text that shows up when a play attacks.-->
 		<div class = "row padLeft">
 			<div class = "col-12">
 			<br>
@@ -129,7 +124,6 @@
 			</div>
 		</div>
 
-		<!-- twelve row that contains the "restart" button. -->
 		<div class = "row padLeft">
 			<div class = "col-12 padLeft">
 			<button class = "restart" style = "font-size: 20px; font-family: 'Lekton', sans-serif;">Restart</button>

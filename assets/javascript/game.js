@@ -16,7 +16,13 @@ var YourDefender;
 var myChar = "";
 var myDef = "";
 
+var mainBGM = $("#mainBGM")
+var attackS = $("#attackS")
+
+
+
 function reset() {	
+
 
 $("#picRow").show();
 
@@ -111,6 +117,11 @@ reset();
 $(".firstRow").click(function(){
         
    if (myChar == "") {
+
+    $("audio#mainBGM")[0].currentTime = 0;
+    $("audio#mainBGM")[0].play();
+
+
    console.log(this);	       
    $(this).appendTo("#yourChar");
    myChar = $(this);
@@ -222,6 +233,7 @@ $(".attackButton").click(function(){
 
      if (!(attackerHP < 1) || !(defenderHP < 1)) {
 
+        $("audio#attackS")[0].play();
 
      attackerHP = (attackerHP - defenderCAP);
      
