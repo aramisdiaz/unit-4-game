@@ -42,7 +42,7 @@ characters.Calo.healthPoints = 100;
 characters.Revan.attackPower = 8;
 characters.Bastila.attackPower = 10;
 characters.Malak.attackPower = 12;
-characters.Calo.attackPower = 10;
+characters.Calo.attackPower = 20;
 
 $(".youAttacked").empty();
 $(".attackedBack").empty();
@@ -104,7 +104,7 @@ Calo:{
     name: "Calo",
     visual: 'assets/images/Calo.png',
     healthPoints: 100,
-    attackPower: 10,
+    attackPower: 20,
     fullName: "Calo Nord",
     counterAttackPower: 5
     }
@@ -154,7 +154,7 @@ $(".firstRow").click(function(){
    else if (YourCharacter == characters.Calo.name){
            attackerHP = characters.Calo.healthPoints - battleDmg;
            attackerAP = characters.Calo.attackPower;
-           origAP = 10;
+           origAP = 20;
            attackerCAP = characters.Calo.counterAttackPower;
            attackerFN = characters.Calo.fullName;
            attack = characters.Calo;
