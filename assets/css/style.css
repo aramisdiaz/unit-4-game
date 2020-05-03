@@ -8,7 +8,7 @@ body {
 
 #RPG {
 	font-size: 54px;
-	font-family: 'Lekton', sans-serif;
+	font-family: 'Press Start 2P', cursive;
 	color: yellow;
 	background-image: url("../images/bannerplate.jpg");
 	text-align: center;
@@ -31,7 +31,7 @@ body {
 .name, .HP {
 	text-align: center;
 	font-size: 15px;
-	font-family: 'Lekton', sans-serif;
+	font-family: 'Press Start 2P', cursive;
 	margin-bottom: 0px;
 
 }
@@ -45,7 +45,7 @@ body {
 .col-12 {
 
 	font-size: 15px;
-	font-family: 'Lekton', sans-serif;
+	font-family: 'Press Start 2P', cursive;
 	color: yellow;
 
 }
